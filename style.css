@@ -1,43 +1,42 @@
 body {
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background: #C7FFF9; 
+  background: -webkit-linear-gradient(to right, #E7C7FF, #C7FFF9);  
+  background: linear-gradient(to right, #E7C7FF, #C7FFF9); 
+  font-family: 'Indie Flower', sans-serif;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 48px;
 }
+
+h2 {font-size: 28px;
+    color: #BD00FF;
+    }
+
+
 
 h2, h3, h4 {
   font-size: 28px;
+    color: #BD00FF;
+
 }
 
-/*img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}*/
-
-/*h4, ul, ol {
-  text-align: left;
-}*/
 
 a, a:hover {
   text-decoration: none;
 }
 
 p, ul, ol {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .cadre {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-/*  margin: 100px;*/
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
+  background: #FCD1FF;
+  border: 20px solid #F9A7FF;
+
+  padding: 30px 80px;
+  border-radius: 15px;
+  box-shadow: 30px 30px 25px #84FFF8;
 }
 
 .margin-100px {
@@ -45,7 +44,7 @@ p, ul, ol {
 }
 
 .margin-right-20px {
-  margin-right: 20px;
+  margin-right: 90px;
 }
 
 .avatar {
@@ -53,12 +52,12 @@ p, ul, ol {
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px #red;
 }
 
 .production {
   width: 300px;
-  height: 200px;
+  height: 500px;
   object-fit: cover;
   border-radius: 3px;
   box-shadow: 2px 2px 10px grey;
@@ -74,23 +73,22 @@ p, ul, ol {
 }
 
 .color-green {
-  color: #458D2E;
+  color: #F090FF;
 }
 
 .btn-pink {
   display: inline-block;
-  background: #C86573;
   padding: 15px;
   margin: 15px;
-  border: 2px solid pink;
+  border: 4px solid pink;
   border-radius: 3px;
-  color: white;
+  color: #F090FF;
   font-weight: bold;
   text-decoration: none;
 }
 
 .btn-pink:hover {
-  background: red;
+  background: #DEFFFE ;
 }
 
 .line-transparent {
@@ -102,22 +100,24 @@ p, ul, ol {
 /*  height: 600px;*/
 }
 
+
+
 .line-dark {
-  background: #9F3544;
+  background: #E52BFF;
   width: 50%;
-  height: 10px;
+  height: 30px;
 }
 
 .line-medium {
-  background: #EE9DA8;
+  background: #F298FF;
   width: 30%;
-  height: 10px;
+  height: 30px;
 }
 
 .line-light {
-  background: #FBE4E7;
+  background: #F8CBFF;
   width: 20%;
-  height: 10px;
+  height: 30px;
 }
 
 .display-flex {
@@ -133,9 +133,9 @@ p, ul, ol {
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: #7EFFE9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
 }
 
@@ -147,25 +147,6 @@ p, ul, ol {
 }
 
 
-
-
-
-
-
-
-
-.bar {
-  margin: 0 auto;
-  background: #00163f;
-  width: 400px;
-  height: 34px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 2px;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-}
 .bar-line {
   height: 100%;
   background: linear-gradient(to right, red, yellow, green);
@@ -223,9 +204,37 @@ p, ul, ol {
   }
 }
 
+p {
+  animation-duration: 3s;
+  animation-name: glissement;
+  animation-iteration-count: 
+}
+
+.infini {
+  animation-iteration-count:
+}
+
+.dix {
+  animation-iteration-count: 10; 
+}
+
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
-
+.laca{
+    height: 600px;
+  width: 1000px;
+}
 
 
 body {
@@ -242,103 +251,12 @@ body {
   border-top: 5px solid white;
   border-bottom: 2px solid white;
   height: 200px;
-  background-color: #aaa;
+  background-color: #FBDEFF;
   background-size: 15px 15px;
   background-position: 0 0, 30px 30px;
   width: 100%;
-}
-.machine .belt-container {
-  position: absolute;
-  left: -1500px;
-  animation: moveBelt 30s infinite linear;
-}
-.machine .belt {
-  position: absolute;
-  top: -10px;
-  height: 5px;
-  width: 100px;
-  background-color: black;
-}
-.machine .belt .cake .layer {
-  border-radius: 5px 5px 0 0;
-}
-.machine .belt .cake .layer-1 {
-  position: relative;
-  top: -25px;
-  left: 12.5px;
-  border-radius: 0;
-  height: 25px;
-  width: 75%;
-}
-.machine .belt .cake .filling {
-  position: relative;
-  top: -50px;
-  left: 12.5px;
-  height: 3px;
-  width: 75%;
-  background-color: white;
-}
-.machine .belt .cake .layer-2 {
-  position: relative;
-  top: -73px;
-  left: 12.5px;
-  height: 20px;
-  width: 75%;
-}
-.machine .belt .cake .topping {
-  position: relative;
-  top: -98px;
-  left: 20px;
-  height: 5px;
-  width: 60%;
-}
-.machine .belt .cake .candle {
-  position: absolute;
-  top: -65px;
-  left: calc(50% - 12.5px);
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  transform: rotate(90deg);
-}
-.machine .belt .cake .candle:before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -10px;
-  right: 25px;
-  height: 5px;
-  background-color: orange;
-  box-shadow: 0 0 140px 15px yellow;
-  animation: candleFlicker 3s linear infinite;
-}
-
-@keyframes moveBelt {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -1500px;
-  }
-}
-@keyframes candleFlicker {
-  0% {
-    box-shadow: none;
-  }
-  5% {
-    box-shadow: 0 0 75px 10px yellow;
-  }
-  15% {
-    box-shadow: none;
-  }
-  18% {
-    box-shadow: 0 0 75px 10px yellow;
-  }
-  100% {
-    box-shadow: 0 0 140px 15px yellow;
-  }
-}
 
 
 
 
+}
